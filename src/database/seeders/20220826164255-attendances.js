@@ -20,22 +20,22 @@ module.exports = {
       },
       {
         attendance_date: '2021-10-10',
-        treatment_id: 20,
+        treatment_id: 8,
         client_id: 4,
       },
       {
         attendance_date: '2021-08-02',
-        treatment_id: 16,
+        treatment_id: 2,
         client_id: 2,
       },
       {
         attendance_date: '2020-02-13',
-        treatment_id: 1,
+        treatment_id: 6,
         client_id: 3,
       },
       {
         attendance_date: '2022-03-21',
-        treatment_id: 20,
+        treatment_id: 10,
         client_id: 9,
       },
     ], { timestamps: false }),
