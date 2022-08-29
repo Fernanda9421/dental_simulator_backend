@@ -17,6 +17,9 @@ const allAtendances = async () => {
         ],
       },
     ],
+    order: [
+      ['dueDate', 'ASC'],
+    ],
   });
 
   if (!installments) {
