@@ -4,6 +4,7 @@ const {
   Treatment,
   Client,
 } = require("../database/models");
+const { Op } = require('sequelize');
 
 const allAtendances = async () => {
   const installments = await Installment.findAll({
@@ -22,7 +23,7 @@ const allAtendances = async () => {
     ],
   });
 
-  if (!installments) {
+  if (installments.length === 0) {
     return {
       error: {
         code: 'notFound',
@@ -34,4 +35,29 @@ const allAtendances = async () => {
   return installments;
 };
 
-module.exports = { allAtendances };
+const findByDate = async ({ startDate, endDate }) => {
+  const installments = await Installment.findAll({
+    where : {
+      "dueDate": {
+        [Op.between] : [startDate , endDate],
+      },
+    },
+    include: [
+      {
+        model: Attendance,
+        as: "attendances",
+        include: [
+          { model: Treatment, as: "treatments" },
+          { model: Client, as: "clients" },
+        ],
+      },
+    ],
+    order: [
+      ['dueDate', 'ASC'],
+    ],
+  });
+
+  return installments;
+}
+
+module.exports = { allAtendances, findByDate };
