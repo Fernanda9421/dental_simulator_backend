@@ -11,7 +11,7 @@ const Treatment = (sequelize, Datatypes) => {
 
   Treatment.associate = (models) => {
     Treatment.hasMany(models.Attendance, {
-      foreignKey: 'treatmentId', as: 'attendances',
+      foreignKey: 'treatmentId', as: 'treatments',
     });
   };
 

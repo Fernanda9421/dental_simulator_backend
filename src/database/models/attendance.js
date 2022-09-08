@@ -20,7 +20,7 @@ const Attendance = (sequelize, Datatypes) => {
     });    
 
     Attendance.hasMany(models.Installment, {
-      foreignKey: 'attendanceId', as: 'installments',
+      foreignKey: 'attendanceId', as: 'attendances',
     });
   };
 
