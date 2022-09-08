@@ -10,7 +10,7 @@ const Client = (sequelize, Datatypes) => {
 
   Client.associate = (models) => {
     Client.hasMany(models.Attendance, {
-      foreignKey: 'clientId', as: 'clients',
+      foreignKey: 'clientId', as: 'attendances',
     });
   };
 
