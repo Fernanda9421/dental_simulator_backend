@@ -10,4 +10,17 @@ const getAllTreatments = async (_req, res, next) => {
   }
 };
 
-module.exports = { getAllTreatments };
+const createTreatment = async (req, res, next) => {
+  try {
+    const { name, totalPrice } = req.body;
+    const newTreatment = await treatment.createTreatment({ name, totalPrice });
+
+    if (newTreatment.error) return next(newTreatment.error); 
+
+    return res.status(201).json(newTreatment);
+  } catch (error) {
+    next(error);
+  }
+};
+
+module.exports = { getAllTreatments, createTreatment };
