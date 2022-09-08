@@ -27,7 +27,7 @@ const allAtendances = async () => {
     return {
       error: {
         code: 'notFound',
-        message: 'Payments not found!',
+        message: 'Pagamento não encontrado',
       },
     };
   }
