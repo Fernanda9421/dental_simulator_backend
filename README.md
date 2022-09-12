@@ -18,8 +18,8 @@
 - Projeto
   - [Sobre](#sobre)
   - [Pré-requisitos](#pré-requisitos)
-  - [Variáveis de Ambiente](#variáveis-de-ambiente)
   - [Instalação](#instalação)
+  - [Variáveis de Ambiente](#variáveis-de-ambiente)
   - [Banco de Dados](#banco-de-dados)
   - [Inicialize a Aplicação](#inicialize-a-aplicação)
   - [Deploy da Aplicação](#deploy-da-aplicação)
@@ -48,20 +48,6 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 
 Além disto é bom ter um editor para trabalhar com o código, como [VSCode](https://code.visualstudio.com/)
 
-## Variáveis de Ambiente
-
-  Para rodar esse projeto localmente, você precisará configurar as variáveis de ambiente.
-
-- Na raiz do projeto, crie uma arquivo nomeado como `.env`;
-- Dentro dele, insira as seguintes informações:
-
-```
-DB_USER=seu_usuario
-DB_PASSWORD=sua_senha
-DB_DATABASE=dental_simulator
-HOSTNAME=localhost
-```
-
 ## Instalação
 
 - Clone o repositório:
@@ -76,6 +62,20 @@ HOSTNAME=localhost
   ```bash
   npm install
   ```
+
+## Variáveis de Ambiente
+
+  Para rodar esse projeto localmente, você precisará configurar as variáveis de ambiente.
+
+- Na raiz do projeto, renomeie o arquivo `.env.example` para `.env`
+- Dentro dele, insira as seguintes informações:
+
+```
+DB_USER=seu_usuario
+DB_PASSWORD=sua_senha
+DB_DATABASE=dental_simulator
+HOSTNAME=localhost
+```
 
 ## Banco de Dados
 
