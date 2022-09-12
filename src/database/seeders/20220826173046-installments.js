@@ -44,30 +44,32 @@ module.exports = {
         attendance_id: 3,
       },
       {
-        installment_value: 179.00,
+        installment_value: 94.00,
         due_date: '2021-10-10',
         attendance_id: 4,
       },
       {
-        installment_value: 179.00,
-        due_date: '2021-11-10',
-        attendance_id: 4,
-      },
-      {
-        installment_value: 430.00,
-        due_date: '2021-08-02',
+        installment_value: 316.67,
+        due_date: '2022-08-02',
         attendance_id: 5,
       },
       {
-        installment_value: 290.00,
-        due_date: '2020-02-13',
+        installment_value: 316.67,
+        due_date: '2022-09-02',
+        attendance_id: 5,
+      },
+      {
+        installment_value: 316.67,
+        due_date: '2022-10-02',
+        attendance_id: 5,
+      },
+      {
+        installment_value: 240.00,
+        due_date: '2022-02-13',
         attendance_id: 6,
-      },{
-        installment_value: 290.00,
-        due_date: '2020-02-13',
-        attendance_id: 6,
-      },{
-        installment_value: 358.00,
+      },
+      {
+        installment_value: 873.00,
         due_date: '2022-03-21',
         attendance_id: 7,
       },

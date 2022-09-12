@@ -24,12 +24,12 @@ module.exports = {
         client_id: 4,
       },
       {
-        attendance_date: '2021-08-02',
+        attendance_date: '2022-08-02',
         treatment_id: 2,
         client_id: 2,
       },
       {
-        attendance_date: '2020-02-13',
+        attendance_date: '2022-02-13',
         treatment_id: 6,
         client_id: 3,
       },
